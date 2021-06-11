@@ -7,6 +7,12 @@ import styled from 'styled-components'
 const StyledHeader = styled.h1`
   color: ${({ theme }) => theme.black};
   text-shadow: 1px 1px 5px ${({ theme }) => theme.primaryColor};
+  margin: 2% 24% 0% 60%;
+  font-size: 3rem;
+`
+const StyledSubHead = styled.h4`
+  color: ${({ theme }) => theme.secondaryColor};
+  margin: 0.5% 24% 3% 60%;
 `
 
 const App = () => {
@@ -33,7 +39,7 @@ const App = () => {
   return (
     <div className="App">
       <StyledHeader className="Header">Characters</StyledHeader>
-      <h4>*** The Empire did nothing wrong ***</h4>
+      <StyledSubHead>The Empire did nothing wrong</StyledSubHead>
       {
         characters.map((char, idx) => {
           return <Character key={idx} info={char} />
