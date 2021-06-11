@@ -2,7 +2,12 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios'
 import './App.css';
 import Character from './components/Character'
-import Details from './components/Details'
+import styled from 'styled-components'
+
+const StyledHeader = styled.h1`
+  color: ${({ theme }) => theme.black};
+  text-shadow: 1px 1px 5px ${({ theme }) => theme.primaryColor};
+`
 
 const App = () => {
   const [characters, setCharacters] = useState([])
@@ -27,7 +32,7 @@ const App = () => {
 
   return (
     <div className="App">
-      <h1 className="Header">Characters</h1>
+      <StyledHeader className="Header">Characters</StyledHeader>
       <h4>*** The Empire did nothing wrong ***</h4>
       {
         characters.map((char, idx) => {
