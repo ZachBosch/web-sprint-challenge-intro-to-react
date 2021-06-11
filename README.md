@@ -10,7 +10,7 @@ This is an individual assessment. All work must be your own. All projects will b
 
 You are not allowed to collaborate during the sprint challenge.
 
-## Project Set Up
+### Project Set Up
 
 - [ ] Fork and clone the repo. Delete your old fork from Github first if you are repeating this Unit.
 - [ ] Open the assignment in Canvas and click on the "Set up git" option.
@@ -81,6 +81,10 @@ After finishing your required elements, you can push your work further. These go
 Be prepared to demonstrate your understanding of this week's concepts by answering questions on the following topics. You might prepare by writing down your own answers before hand.
 
 1. What is React JS and what problems does it solve? Support your answer with concepts introduced in class and from your personal research on the web.
+  React is a JS library that seeks to viewing/changing/updating the DOM faster and more efficient. This is accomplished, in part, by limiting re-renders to only the components whose data have changed.
 1. Describe component state.
+  Component state is data that is subject to change, making it dynamic.
 1. Describe props.
+  Props is how we pass data from parent to child.
 1. What are side effects, and how do you sync effects in a React component to changes of certain state or props?
+  Side effects are anything that changes outside of a function that was caused by a change inside of the function. You can sync effects using an argument at the end of the useEffect function.

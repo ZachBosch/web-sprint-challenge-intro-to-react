@@ -1,7 +1,6 @@
 body {
-  margin: 0;
-  padding: 0;
-  font-family: sans-serif;
-  background-image: url('./images/sw-bg.jpg');
+  font-family: 'Montserrat Subrayada', sans-serif;
+  background-image: url('./images/darth.jpeg');
   background-size: cover;
+  background-repeat: no-repeat;
 }
